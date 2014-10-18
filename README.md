@@ -1,6 +1,9 @@
 # simple-parser
-Author: Thomas J Donahue
+Author: Thomas Donahue
+
 Email: donahut.se@gmail.com
+
+This was built as part of an assignment for a course, Situated Natural Language Dialogs with Robots, that I took while studying at Tufts University -- Spring 2013. 
 
 ## Description
 
@@ -16,34 +19,34 @@ http://en.wikipedia.org/wiki/Combinatory_categorial_grammar
 
 java -jar simple-parser-0.1.0-standalone.jar [args]
 
-arg1 - Sentence 
-
-Choose which sentence to parse. Options below:
-
-1 - "the dog bit John"
-
-2 - "Andie saw Steve"
-
-3 - "the doctor sent for the patient arrived"
-
-arg2 - Vision 
-
-Choose whether the "vision system" constrains the parse. This only
-works for sentence 2. In the example case, an actual "saw" has been
-identified in vision, and thus constrains the lexicon to remove the
-verb possibility for "saw." You will see no effect from turning on
-vision for sentences 1 and 3. 
+#### arg1 - Sentence 
+  
+  Choose which sentence to parse. Options below:
+  
+  1 - "the dog bit John"
+  
+  2 - "Andie saw Steve"
+  
+  3 - "the doctor sent for the patient arrived"
+  
+#### arg2 - Vision 
+  
+  Choose whether the "vision system" constrains the parse. This only
+  works for sentence 2. In the example case, an actual "saw" has been
+  identified in vision, and thus constrains the lexicon to remove the
+  verb possibility for "saw." You will see no effect from turning on
+  vision for sentences 1 and 3. 
 
 0 - Off
 1 - On
 
-Example Calls:
+#### Examples:
 
 java -jar simple-parser-1.0-standalone.jar 1 0
 
 java -jar simple-parser-1.0-standalone.jar 2 1
 
-Notes:
+#### Notes:
 
 What is printed is the entire workspace after each shift and reduce
 cycle. For sentence 3, it is virtually impossible to follow what is
